@@ -23,7 +23,7 @@ profile.set_preference('permissions.default.image', 2)
 profile.set_preference(
     'dom.ipc.plugins.enabled.libflashplayer.so', 'false'
 )
-#profile.native_events_enabled = True
+profile.native_events_enabled = True
 options = webdriver.firefox.options.Options()
 options.headless = True
 firefox = webdriver.Firefox(firefox_profile=profile, options=options, timeout=60)
